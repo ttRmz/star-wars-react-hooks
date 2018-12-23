@@ -1,3 +1,10 @@
 .header {
-  fill: #000000;
+  path {
+    fill: #000000;
+    transition: fill 150ms;
+  }
+
+  path:hover {
+    fill: #F1E05A;
+  }
 }

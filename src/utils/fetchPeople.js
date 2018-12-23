@@ -2,7 +2,7 @@ import config from '../constants/config';
 
 const fetchPeople = async name => {
   try {
-    const res = await fetch(`${config.apiUrl}?search=${name}`);
+    const res = await fetch(`${config.apiUrl}/people/?search=${name}`);
 
     if (res && res.ok) {
       const data = await res.json();

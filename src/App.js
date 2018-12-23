@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss';
 import fetchPeople from './utils/fetchPeople';
+import { Header, Input, People, AppWrapper } from './components';
 
-import { Header, AppWrapper } from './components';
+// TODO: add debounce
 
 const App = () => {
   const [name, setName] = useState('');
   const [people, setPeople] = useState(null);
+  const hasData = name && people;
   useEffect(
     () => {
       fetchPeople(name).then(data => setPeople(data));
@@ -16,16 +18,13 @@ const App = () => {
   return (
     <AppWrapper>
       <Header />
-      <input
+      <Input
         type="text"
         placeholder="May the hooks be with you..."
         onChange={evt => setName(evt.target.value)}
         value={name}
       />
-      {people &&
-        people.results.map((result, index) => (
-          <div key={index}>{result.name}</div>
-        ))}
+      {hasData && <People data={people.results} />}
     </AppWrapper>
   );
 };

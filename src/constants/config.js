@@ -1,3 +1,3 @@
 export default {
-  apiUrl: 'https://swapi.co/api/people/'
+  apiUrl: 'https://swapi.co/api'
 };
