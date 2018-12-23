@@ -2,6 +2,7 @@
   "name": "learning_hooks",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://ttrmz.github.io/StarWars_Hooks/",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.7.0-alpha.2",
