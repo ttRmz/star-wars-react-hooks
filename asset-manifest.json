@@ -1,13 +1,13 @@
 {
-  "main.css": "/StarWars_Hooks/static/css/main.92a69865.chunk.css",
-  "main.js": "/StarWars_Hooks/static/js/main.c0024846.chunk.js",
-  "main.js.map": "/StarWars_Hooks/static/js/main.c0024846.chunk.js.map",
-  "static/js/1.05e11c7b.chunk.js": "/StarWars_Hooks/static/js/1.05e11c7b.chunk.js",
-  "static/js/1.05e11c7b.chunk.js.map": "/StarWars_Hooks/static/js/1.05e11c7b.chunk.js.map",
+  "main.css": "/StarWars_Hooks/static/css/main.a3d60196.chunk.css",
+  "main.js": "/StarWars_Hooks/static/js/main.810f8acb.chunk.js",
+  "main.js.map": "/StarWars_Hooks/static/js/main.810f8acb.chunk.js.map",
+  "static/js/1.9b83011d.chunk.js": "/StarWars_Hooks/static/js/1.9b83011d.chunk.js",
+  "static/js/1.9b83011d.chunk.js.map": "/StarWars_Hooks/static/js/1.9b83011d.chunk.js.map",
   "runtime~main.js": "/StarWars_Hooks/static/js/runtime~main.af307bee.js",
   "runtime~main.js.map": "/StarWars_Hooks/static/js/runtime~main.af307bee.js.map",
-  "static/css/main.92a69865.chunk.css.map": "/StarWars_Hooks/static/css/main.92a69865.chunk.css.map",
+  "static/css/main.a3d60196.chunk.css.map": "/StarWars_Hooks/static/css/main.a3d60196.chunk.css.map",
   "index.html": "/StarWars_Hooks/index.html",
-  "precache-manifest.30c3164471c0bb4bffae100195a6d690.js": "/StarWars_Hooks/precache-manifest.30c3164471c0bb4bffae100195a6d690.js",
+  "precache-manifest.6a795ec6780d4e6de56f2129eb75da41.js": "/StarWars_Hooks/precache-manifest.6a795ec6780d4e6de56f2129eb75da41.js",
   "service-worker.js": "/StarWars_Hooks/service-worker.js"
 }
