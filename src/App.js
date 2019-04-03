@@ -3,8 +3,6 @@ import './App.scss';
 import fetchPeople from './utils/fetchPeople';
 import { Header, Input, People, AppWrapper } from './components';
 
-// TODO: add debounce
-
 const App = () => {
   const [name, setName] = useState('');
   const [people, setPeople] = useState(null);

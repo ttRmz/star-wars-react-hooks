@@ -1,26 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import './PeopleCard.scss';
-import fetchHomeworld from '../../utils/fetchHomeworld';
-
-// TODO: add debounce
+import axios from 'axios';
 
 const PeopleCard = ({ data }) => {
   const [homeworld, setHomeworld] = useState('');
+  const [loading, setLoading] = useState(true);
   useEffect(
     () => {
-      fetchHomeworld(data.homeworld).then(data => setHomeworld(data.name));
+      const fetchData = async () => {
+        setLoading(true);
+        const res = await axios(data.homeworld);
+        setHomeworld(res.data.name);
+        setLoading(false);
+      };
+      fetchData();
     },
     [data.homeworld]
   );
-  const hasHomeworld = homeworld && homeworld !== 'unknown';
-  return (
+  return !loading ? (
     <div className="fetchPeople__card">
       <span>{data.name}</span>
-      {hasHomeworld && (
-        <span className="fetchPeople__card--from"> from {homeworld}</span>
-      )}
+      <span className="fetchPeople__card--from">
+        from {homeworld === 'unknown' ? 'nowhere' : homeworld}
+      </span>
     </div>
-  );
+  ) : null;
 };
 
 export default PeopleCard;

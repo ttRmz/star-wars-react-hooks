@@ -12,7 +12,6 @@ module.exports = {
     jest: true
   },
   rules: {
-    'flowtype/generic-spacing': 'off',
     'prettier/prettier': 'error',
     'react/prop-types': 'off',
     'no-param-reassign': 'error',
